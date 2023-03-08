@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Two Backgrounds with Mouse Follow</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+      document.addEventListener("mousemove", function(event) {
+    const bg = document.querySelector(".bg");
+    const xPos = event.clientX;
+    const yPos = event.clientY;
+    console.log(xPos);console.log(yPos);
+    bg.style.marginLeft = "calc("+xPos+"px - 375%)";
+    bg.style.marginTop = "calc("+yPos+"px - 205%)";
+    
+});
+
+
+    </script>
+    <style>
+      body {
+  margin: 0;
+  padding: 0;
+}
+
+.global{
+  position: fixed;
+}
+
+
+.loadScreen {
+
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, #41ee86, #2cf3e9);
+  z-index: 1;
+}
+
+
+.bg {
+
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 750%;
+  height: 1200%;
+  background-image: radial-gradient(circle, rgba(2,0,36,1) 0%, rgb(8, 8, 69) 50%, rgb(10, 10, 75) 80%, rgb(13, 13, 81) 90%, rgb(4, 39, 58) 100%);
+  background-size: contain;
+  z-index: 2;
+}
+
+
+.topLayer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: 3;
+  color: white;
+  font-family: "PT Sans", Calibri, Tahoma, sans-serif;
+  color: white;
+  text-align: center;
+}
+.buttons{
+  margin-left: 5%;
+  position: absolute;
+  z-index:4
+ 
+}
+
+
+.buttonChar{
+  position: inherit;
+  border: 1px solid rgb(255, 255, 255);
+  display: block;
+  color: white;
+  font-size: 18px;
+  background-color: #ffffff00;
+  padding: 10px 30px;
+  border-radius: 6px;
+  transition-duration: 0.3s;
+}
+
+.buttonChar:hover{
+  background-color: rgb(255, 248, 248);
+  color:black;
+
+}
+
+
+.buttonselectChar{
+  position: inherit;
+  border: 3px solid rgb(255, 255, 255);
+  display: block;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  background-color: rgba(18, 18, 18, 0.471);
+  padding: 8px 28px;
+  border-radius: 6px;
+  transition-duration: 0.3s;
+}
+
+.buttonselectChar:hover{
+  background-color: rgb(255, 248, 248);
+  color:black;
+
+}
+
+
+
+    </style>
+</head>
+<body>
+  <div class="global">
+    <div class="loadScreen"><h1>PLEASE WAIT A MOMENT</h1><br><h2>The site is still loading.</h2></div>
+    <div class="buttons"><button class="buttonChar" onclick="window.location.href='index.html';">Page 1</button><br><br><br><br><button class="buttonChar" onclick="window.location.href='page2.html';">Page 2</button><br><br><br><br><button class="buttonChar" onclick="window.location.href='page3.html';">Page 3</button><br><br><br><br><button class="buttonselectChar" onclick="window.location.href='page4.html';">Page 4</button><br><br><br><br><button class="buttonChar" onclick="window.location.href='page5.html';">Page 5</button></div>
+    <div class="topLayer title"><p style="font-size: 50px">CA MARCHE</p><br><p style="font-size: 20px"></p>Ca marche ca marche ca marche ca marche ca marche ca marche ca marche<br>Ca marche ca marche ca marche ca marche ca marche ca marche ca marche<br>Ca marche ca marche ca marche ca marche ca marche ca marche ca marche<br>Ca marche ca marche ca marche ca marche ca marche ca marche ca marche<br>Ca marche ca marche ca marche ca marche ca marche ca marche ca marche<br>Ca marche ca marche ca marche ca marche ca marche ca marche ca marche<br>Ca marche ca marche ca marche ca marche ca marche ca marche ca marche<br>Ca marche ca marche ca marche ca marche ca marche ca marche ca marche<br><p style="font-size:10px; margin-right: -35%;">Page 4</p></div>
+    <div class="bg"></div>
+  </div>
+</body>
+</html>
