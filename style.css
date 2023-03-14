@@ -43,7 +43,7 @@ body {
     color: white;
     font-family: "PT Sans", Calibri, Tahoma, sans-serif;
     color: white;
-    text-align: center;
+    text-align: justify;
   }
   .buttons{
     margin-left: 5%;
@@ -89,4 +89,6 @@ body {
     color:black;
   
   }
-  
+  .title {
+margin-left: 135px;
+}
