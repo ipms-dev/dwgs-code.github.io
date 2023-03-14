@@ -16,7 +16,7 @@ const halfWindowHeight = windowHeight / 2;
 
 function redirect() {
 
-  window.location.replace("http://www.example.com");
+  window.location.replace("https://dwgs-code.github.io/index.html");
 
 }
 
