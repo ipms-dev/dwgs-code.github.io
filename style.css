@@ -24,8 +24,8 @@ body {
     margin-top: -300%;
     top: -100%;
     left: 0;
-    width: 1800%;
-    height: 2400%;
+    width: 750%;
+    height: 1200%;
     background-image: radial-gradient(circle, rgba(2,0,36,1) 0%, rgb(8, 8, 69) 50%, rgb(10, 10, 75) 80%, rgb(13, 13, 81) 90%, rgb(4, 39, 58) 100%);
     background-size: contain;
     z-index: 2;
