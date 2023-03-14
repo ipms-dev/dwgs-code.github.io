@@ -3,8 +3,8 @@ document.addEventListener("mousemove", function(event) {
     const xPos = event.clientX;
     const yPos = event.clientY;
     console.log(xPos);console.log(yPos);
-    bg.style.marginLeft = "calc("+xPos+"px - 375%)";
-    bg.style.marginTop = "calc("+yPos+"px - 205%)";
+    bg.style.marginLeft = "calc("+xPos+"px - 700%)";
+    bg.style.marginTop = "calc("+yPos+"px - 410%)";
     
 });
 
@@ -16,7 +16,7 @@ const halfWindowHeight = windowHeight / 2;
 
 function redirect() {
 
-  window.location.replace("https://dwgs-code.github.io/index.html");
+  window.location.replace("http://www.example.com");
 
 }
 
