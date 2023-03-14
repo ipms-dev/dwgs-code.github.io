@@ -5,16 +5,14 @@
   <title>CA MARCHE</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script>
-var delay=200
+let delay=200
 setTimeout(function() {
 window.addEventListener('wheel', function(event)
 {
- if (event.deltaY < 0)
- {
-
- }
+ if (event.deltaY < 0) {}
  else if (event.deltaY > 15){
-  window.location.replace("page2.html")
+  window.location.replace("page2.html");
+  
 }
 });
 }, delay);
