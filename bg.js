@@ -3,7 +3,7 @@ document.addEventListener("mousemove", function(event) {
     const xPos = event.clientX;
     const yPos = event.clientY;
     console.log(xPos);console.log(yPos);
-    bg.style.marginLeft = "calc("+xPos+"px - 400%)";
+    bg.style.marginLeft = "calc("+xPos+"px - 350%)";
     bg.style.marginTop = "calc("+yPos+"px - 205%)";
     
 });
